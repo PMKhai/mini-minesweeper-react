@@ -1,10 +1,10 @@
 
 import { createStore, combineReducers } from 'redux';
-import userReducer from './duck/user';
+import gameReducer from './duck/game';
 
 
 const rootReducer = combineReducers({
-  user: userReducer,
+  game: gameReducer,
 });
 
 const store = createStore(rootReducer);

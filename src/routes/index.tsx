@@ -1,4 +1,5 @@
 import { lazy } from 'react';
+import { path } from './path';
 
 export const routes = [
   {
@@ -6,11 +7,11 @@ export const routes = [
     component: lazy(() => import('../component/page/NotFound'))
   },
   {
-    path: '/',
+    path: path.welcomePage,
     component: lazy(() => import('../component/page/Home'))
   },
   {
-    path: '/user',
-    component: lazy(() => import('../component/page/Profile'))
+    path: path.gamePage,
+    component: lazy(() => import('../component/page/Game'))
   }
-]
+];
